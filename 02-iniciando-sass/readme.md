@@ -94,6 +94,47 @@ Debemos tener instalado Node.js y NPM para saber si esta instalado se escribe en
 }
 
 ```
+Se compila en CSS:
+```scss
+    .nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    }
+    .nav__brand {
+    width: 150px;
+    height: auto;
+    display: flex;
+    }
+    .nav__brand img {
+    width: 100%;
+    height: auto;
+    }
+    .nav__navegation {
+    list-style: none;
+    display: flex;
+    }
+    .nav__button {
+    background: #4a5205;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    }
+    .nav__button:hover {
+    background: #84910e;
+    color: #fff;
+    }
+    .nav__button-background {
+    background: #84910e;
+    color: #fff;
+    }
+
+```
+
+
 ## REFERENCIA AL BLOQUE PADRE
 El carácter especial & siempre se reemplaza por el selector padre
 ```scss
