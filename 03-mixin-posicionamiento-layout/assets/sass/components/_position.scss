@@ -1,0 +1,55 @@
+.contenedor{
+    width:100%;
+    max-width: 60%;
+    height:600px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding: 1rem;
+    background: rgb(152, 184, 152);
+}
+
+.contenedor p:nth-child(2n){
+    position: absolute;
+    top: 120px;
+}
+
+
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background: orange;
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background: green;
+    float: right;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background: rgb(90, 73, 90);
+    float: right;
+    position: absolute;
+    z-index: 0;
+    top: 120px;
+    left: 50px;
+
+}
+
+.img-fluid{
+   @include img-object-fit(auto) 
+}

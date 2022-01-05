@@ -1,0 +1,50 @@
+@mixin border-radius($top-left:10px,$top-right:null,$bottom-right:null,$bottom-left:null){
+    -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+    -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+    -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;
+    -o-border-radius: $top-left $top-right $bottom-right $bottom-left;
+        border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+
+@mixin img-object-fit($objectFit-height:200px,$object-fit:cover,$objectFit-positionX:0,$objectFit-positionY:0){
+    width: 100%;
+    height: $objectFit-height;
+    object-fit: $object-fit;
+    object-position: $objectFit-positionX $objectFit-positionY;
+}
+
+@mixin img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+/* 
+min-width:768px ----> eso significa que es de 768px 
+hacia arriba o sea hasta el infinito del ancho de la pantalla.
+
+max-width  <--------- Esto signific a que es de 768px hacia abajo
+
+*/
+@mixin tablet-view{
+    @media (min-width:#{$min-tablet}){
+        @content;
+    }
+}
+
+@mixin tablet-view-down{
+    @media (max-width:#{$max-tablet-down}){
+        @content;
+    }
+}
+
+@mixin laptop-view{
+    @media (min-width:#{$min-laptop}){
+        @content;
+    }
+}
+
+@mixin mobile-view{
+    @media (max-width:#{$max-mobile}){
+        @content;
+    }
+}

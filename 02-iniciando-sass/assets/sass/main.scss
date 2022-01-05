@@ -1,4 +1,6 @@
-@import 'variables';
-@import 'reset';
-@import 'grid';
-@import 'nav';
+@import 'base/tipografia';
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
+@import 'base/reset';
+@import 'layout/grid';
+@import 'components/nav';

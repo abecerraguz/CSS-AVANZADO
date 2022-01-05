@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -19,11 +20,8 @@ html {
  */
 body {
   margin: 0;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
-}
-
-body * {
-  padding: 0;
 }
 
 /**
@@ -353,7 +351,10 @@ template {
 .button, .nav__button-background, .nav__button:hover, .nav__button {
   padding: 3px 15px;
   margin: 0 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  border-radius: 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -366,7 +367,7 @@ template {
   justify-content: center;
   align-items: center;
   background: #000;
-  color: #fff;
+  color: #ffffff;
 }
 .nav__brand {
   width: 150px;
@@ -383,16 +384,16 @@ template {
 }
 .nav__button {
   background: #4a5205;
-  color: #fff;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
 .nav__button:hover {
-  background: #84910e;
-  color: #fff;
+  background: #7b8808;
+  color: #ffffff;
 }
 .nav__button-background {
-  background: #84910e;
-  color: #fff;
+  background: #7b8808;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
