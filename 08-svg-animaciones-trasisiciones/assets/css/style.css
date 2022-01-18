@@ -1,0 +1,63 @@
+.claseUno{
+    fill: purple;
+}
+
+.claseDos{
+    fill: coral;
+}
+
+/* INICIO DE LA TRANSICION O EL ESTADO A */
+.arterisco{
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    fill:#000;
+    transform: rotate(0deg);
+    -webkit-animation: 3s rotate infinite linear;
+    animation: 3s rotate infinite linear;
+    transform-origin: 100% 100%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.arterisco:hover{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    fill:rgb(150, 149, 149);
+    transform: rotate(360deg);
+}
+
+/* .contentCuad{
+    animation: 1.9s traslate infinite linear alternate;
+} */
+
+.user{
+    width: 130px;
+    animation: 1.9s traslate infinite linear alternate;
+}
+
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes traslate {
+    0% {
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+

@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  background: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-1 {
+  order: 3;
+  flex: 1 1 100px;
+}
+
+.item-2 {
+  order: 1;
+  flex: 1 1 100px;
+}
+
+.item-3 {
+  order: 4;
+  flex: 1 1 100px;
+}
+
+.item-4 {
+  order: 2;
+  flex: 1 1 100px;
+}
+
+.btn {
+  background: cornflowerblue;
+  border: none;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  max-width: 400px;
+}
+.form__input {
+  flex: 1 1 auto;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+.form__buttom {
+  background: cornflowerblue;
+  border: none;
+  height: 40px;
+  color: #fff;
+  margin: 0;
+  padding: 0 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    // border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 200px;
+    // margin: 20px auto;
+    // // Displey flex Define un contenedor flexible, permitiendo alinear sus hijos directos de la forma que determinemos
+    // display: flex;
+    // // Direccion de los items row o row-reverse o column-reverse
+    // flex-direction: row;
+    // // flex-wrap : nowrap o wrap o wrap-reverse
+    // flex-wrap:nowrap;
+    // // justify-content / la disposicion en la horizontal
+    // // align-item / controla los items en su vertical
+    // justify-content: space-evenly;
+    // align-items: center;
+    // // 
+    // // align-content: flex-end;
+}
+
+.item{
+    // width: 200px;
+    background: coral;
+    // width: 100px;
+    // height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.item-1{
+    order: 3;
+    flex: 1 1 100px;
+}
+
+.item-2{
+    order: 1;
+    flex: 1 1 100px;
+}
+
+.item-3{
+    order: 4;
+    flex: 1 1 100px;
+}
+
+.item-4{
+    order: 2;
+    // La propiedad flex 
+    // El primer valor es flex-grow, esta define en que proporción crece un item
+    // El segundo valor es flex-shrink, define la capacidad de un objeto flexible para contraerse si es necesario
+    // flex-basis, define el tamaño de un Item antes de distribuir el espacio restante
+    flex: 1 1 100px;
+}
+
+.btn{
+    background: cornflowerblue;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.form{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    max-width:400px;
+
+    &__input{
+        flex:1 1 auto;
+        height: 40px;
+        border: 1px solid grey;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    &__buttom{
+        background: cornflowerblue;
+        border: none;
+        height: 40px;
+        color: #fff;
+        margin: 0;
+        padding: 0 30px;
+    }
+}
+
